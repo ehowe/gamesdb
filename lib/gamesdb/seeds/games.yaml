@@ -1,0 +1,82 @@
+---
+Game:
+- id: '665'
+  GameTitle: X-Men
+  ReleaseDate: '1993'
+  Platform: Sega Genesis
+- id: '8104'
+  GameTitle: X-Men
+  ReleaseDate: 01/01/1993
+  Platform: Sega Mega Drive
+- id: '14795'
+  GameTitle: X-Men
+  ReleaseDate: 01/01/1994
+  Platform: Sega Game Gear
+- id: '1386'
+  GameTitle: The Uncanny X-Men
+  ReleaseDate: 12/01/1989
+  Platform: Nintendo Entertainment System (NES)
+- id: '4763'
+  GameTitle: X-Men Legends
+  ReleaseDate: 09/21/2004
+  Platform: Sony Playstation 2
+- id: '4765'
+  GameTitle: ! 'X-Men: Next Dimension'
+  ReleaseDate: 10/15/2002
+  Platform: Sony Playstation 2
+- id: '5444'
+  GameTitle: X-Men Legends
+  ReleaseDate: 09/24/2004
+  Platform: Nintendo GameCube
+- id: '8311'
+  GameTitle: ! 'X-Men: Destiny'
+  ReleaseDate: 09/27/2011
+  Platform: Sony Playstation 3
+- id: '8898'
+  GameTitle: ! 'X-Men: Destiny'
+  ReleaseDate: 09/27/2011
+  Platform: Microsoft Xbox 360
+- id: '11467'
+  GameTitle: ! 'X-Men: Next Dimension'
+  ReleaseDate: 10/15/2002
+  Platform: Nintendo GameCube
+- id: '14096'
+  GameTitle: ! 'X-Men: Destiny'
+  ReleaseDate: 09/27/2011
+  Platform: Nintendo Wii
+- id: '628'
+  GameTitle: X-Men vs. Street Fighter
+  ReleaseDate: 06/30/1998
+  Platform: Sony Playstation
+- id: '2468'
+  GameTitle: ! 'X-Men: Children Of The Atom'
+  ReleaseDate: '1994'
+  Platform: Arcade
+- id: '3123'
+  GameTitle: ! 'X-Men: Mojo World'
+  ReleaseDate: 09/14/1996
+  Platform: Sega Master System
+- id: '3291'
+  GameTitle: ! 'X-Men: Mutant Apocalypse'
+  ReleaseDate: 01/01/1994
+  Platform: Super Nintendo (SNES)
+- id: '4209'
+  GameTitle: ! 'X-Men Origins: Wolverine'
+  ReleaseDate: 05/01/2009
+  Platform: PC
+- id: '4034'
+  GameTitle: ! 'X-Men: The Official Game'
+  ReleaseDate: 05/16/2006
+  Platform: Nintendo Game Boy Advance
+- id: '4146'
+  GameTitle: ! 'X-Men: Reign of Apocalypse'
+  ReleaseDate: 09/25/2001
+  Platform: Nintendo Game Boy Advance
+- id: '4978'
+  GameTitle: ! 'X-Men Origins: Wolverine'
+  ReleaseDate: 05/01/2009
+  Platform: Nintendo Wii
+- id: '5374'
+  GameTitle: ! 'X-Men: The Official Game'
+  ReleaseDate: 05/16/2006
+  Platform: Sony Playstation 2

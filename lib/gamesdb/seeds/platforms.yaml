@@ -1,0 +1,146 @@
+---
+basePlatformUrl: http://thegamesdb.net/platform/
+Platforms:
+- Platform:
+  - id: '25'
+    name: 3DO
+    alias: 3do
+  - id: '4911'
+    name: Amiga
+    alias: amiga
+  - id: '4914'
+    name: Amstrad CPC
+    alias: amstrad-cpc
+  - id: '4916'
+    name: Android
+  - id: '23'
+    name: Arcade
+    alias: arcade
+  - id: '22'
+    name: Atari 2600
+    alias: atari-2600
+  - id: '26'
+    name: Atari 5200
+    alias: atari-5200
+  - id: '27'
+    name: Atari 7800
+    alias: atari-7800
+  - id: '28'
+    name: Atari Jaguar
+    alias: atari-jaguar
+  - id: '29'
+    name: Atari Jaguar CD
+    alias: atari-jaguar-cd
+  - id: '30'
+    name: Atari XE
+    alias: atari-xe
+  - id: '31'
+    name: Colecovision
+    alias: colecovision
+  - id: '40'
+    name: Commodore 64
+    alias: commodore-64
+  - id: '32'
+    name: Intellivision
+    alias: intellivision
+  - id: '4915'
+    name: IOS
+  - id: '37'
+    name: Mac OS
+    alias: mac-os
+  - id: '14'
+    name: Microsoft Xbox
+    alias: microsoft-xbox
+  - id: '15'
+    name: Microsoft Xbox 360
+    alias: microsoft-xbox-360
+  - id: '24'
+    name: NeoGeo
+    alias: neogeo
+  - id: '4912'
+    name: Nintendo 3DS
+    alias: nintendo-3ds
+  - id: '3'
+    name: Nintendo 64
+    alias: nintendo-64
+  - id: '8'
+    name: Nintendo DS
+    alias: nintendo-ds
+  - id: '7'
+    name: Nintendo Entertainment System (NES)
+    alias: nintendo-entertainment-system-nes
+  - id: '4'
+    name: Nintendo Game Boy
+    alias: nintendo-gameboy
+  - id: '5'
+    name: Nintendo Game Boy Advance
+    alias: nintendo-gameboy-advance
+  - id: '41'
+    name: Nintendo Game Boy Color
+    alias: nintendo-gameboy-color
+  - id: '2'
+    name: Nintendo GameCube
+    alias: nintendo-gamecube
+  - id: '4918'
+    name: Nintendo Virtual Boy
+    alias: nintendo-virtual-boy
+  - id: '9'
+    name: Nintendo Wii
+    alias: nintendo-wii
+  - id: '38'
+    name: Nintendo Wii U
+    alias: nintendo-wii-u
+  - id: '1'
+    name: PC
+    alias: pc
+  - id: '4917'
+    name: Philips CD-i
+    alias: philips-cd-i
+  - id: '33'
+    name: Sega 32X
+    alias: sega-32x
+  - id: '21'
+    name: Sega CD
+    alias: sega-cd
+  - id: '16'
+    name: Sega Dreamcast
+    alias: sega-dreamcast
+  - id: '20'
+    name: Sega Game Gear
+    alias: sega-game-gear
+  - id: '18'
+    name: Sega Genesis
+    alias: sega-genesis
+  - id: '35'
+    name: Sega Master System
+    alias: sega-master-system
+  - id: '36'
+    name: Sega Mega Drive
+    alias: sega-mega-drive
+  - id: '17'
+    name: Sega Saturn
+    alias: sega-saturn
+  - id: '4913'
+    name: Sinclair ZX Spectrum
+    alias: sinclair-zx-spectrum
+  - id: '10'
+    name: Sony Playstation
+    alias: sony-playstation
+  - id: '11'
+    name: Sony Playstation 2
+    alias: sony-playstation-2
+  - id: '12'
+    name: Sony Playstation 3
+    alias: sony-playstation-3
+  - id: '39'
+    name: Sony Playstation Vita
+    alias: sony-playstation-vita
+  - id: '13'
+    name: Sony PSP
+    alias: sony-psp
+  - id: '6'
+    name: Super Nintendo (SNES)
+    alias: super-nintendo-snes
+  - id: '34'
+    name: TurboGrafx 16
+    alias: turbografx-16

@@ -6,6 +6,13 @@ class Gamesdb::Client < Cistern::Service
   model :game
   collection :games
   request :list_games
+  request :get_game
+
+  model :platform
+  collection :platforms
+  request :list_platforms
+  request :get_platform
+  request :get_platform_games
 
   class Real
     attr_reader :connection
@@ -23,7 +30,7 @@ class Gamesdb::Client < Cistern::Service
       headers = options[:headers]       || {}
       body    = options[:body]          || nil
       expects = options[:expects]       || 200
-      query   = options[:query]         || nil
+      query   = options[:query]         || {}
 
       connect_hash = {
         :method  => method,

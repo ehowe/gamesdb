@@ -11,9 +11,7 @@ class Gamesdb::SaxDocument < Nokogiri::XML::SAX::Document
   end
 
   def body
-    @stack.first.each do |key, value|
-      @stack.first[key] = [value] if value.is_a?(Hash)
-    end
+    @stack.first
   end
 
   def end_element(name)

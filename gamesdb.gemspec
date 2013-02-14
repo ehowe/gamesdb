@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.version  = Gamesdb::Version
   gem.authors  = ["Eugene Howe"]
   gem.email    = "eugene@xtreme-computers.net"
+  gem.summary  = "Gem for searching thegamesdb.net"
   gem.homepage = "https://github.com/ehowe/gamesdb.git"
 
   gem.files    = `git ls-files`.split($/)
@@ -19,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'excon'
   gem.add_dependency 'nokogiri'
   gem.add_dependency 'rest-client'
+  gem.add_dependency 'awesome_print'
 end

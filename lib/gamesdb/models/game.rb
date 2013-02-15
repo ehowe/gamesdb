@@ -21,33 +21,42 @@ class Gamesdb::Client::Game < Cistern::Model
   #attribute :thumb,        aliases: "Images",      squash: "thumb"
   #attribute :clearlogo,    aliases: "Images",      squash: "clearlogo"
 
+  def path_url
+    "http://thegamesdb.net/banners/_gameviewcache/"
+  end
+
+  def append_urls(resource)
+    resource = resource.class == Array ? resource : [resource]
+    if resource.first.is_a?(Hash)
+      resource.map! { |h| h.each { |k,v| h[k] = path_url + v } }
+    else
+      resource.map! { |url| path_url + url }
+    end
+    resource
+  end
+
   def fanart
     requires :images
-    images["fanart"]
+    append_urls images["fanart"]
   end
 
   def boxart
     requires :images
-    images["boxart"]
+    append_urls images["boxart"]
   end
 
   def banner
     requires :images
-    images["banner"]
+    append_urls images["banner"]
   end
 
   def screenshot
     requires :images
-    images["screenshot"]
-  end
-
-  def thumb
-    requires :images
-    images["thumb"]
+    append_urls images["screenshot"]
   end
 
   def clearlogo
     requires :images
-    images["clearlogo"]
+    append_urls images["clearlogo"]
   end
 end

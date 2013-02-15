@@ -23,6 +23,20 @@ class Gamesdb::Client::Platform < Cistern::Model
   #attribute :consoleart,     aliases: "Images", squash: "consoleart",    type: Array
   #attribute :controllerart,  aliases: "Images", squash: "controllerart", type: Array
 
+  def path_url
+    "http://thegamesdb.net/banners/_gameviewcache/"
+  end
+
+  def append_urls(resource)
+    resource = resource.class == Array ? resource : [resource]
+    if resource.first.is_a?(Hash)
+      resource.map! { |h| h.each { |k,v| h[k] = path_url + v } }
+    else
+      resource.map! { |url| path_url + url }
+    end
+    resource
+  end
+
   def games
     data = connection.get_platform_games(identity)["Game"]
     connection.games.load(data)
@@ -30,26 +44,26 @@ class Gamesdb::Client::Platform < Cistern::Model
 
   def fanart
     requires :images
-    images["fanart"]
+    append_urls images["fanart"]
   end
 
   def boxart
     requires :images
-    images["boxart"]
+    append_urls images["boxart"]
   end
 
   def banner
     requires :images
-    images["banner"]
+    append_urls images["banner"]
   end
 
   def consoleart
     requires :images
-    images["consoleart"]
+    append_urls images["consoleart"]
   end
 
   def controllerart
     requires :images
-    images["controllerart"]
+    append_urls images["controllerart"]
   end
 end

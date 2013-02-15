@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gamesdb (0.0.1)
+    gamesdb (1.0)
       awesome_print
       cistern
       excon

@@ -16,11 +16,11 @@ class Gamesdb::Client::Platform < Cistern::Model
   attribute :media
   attribute :maxcontrollers
   attribute :rating,         aliases: "Rating"
-  attribute :fanart,                            squash: "Images", type: Array
-  attribute :boxart,                            squash: "Images", type: Array
-  attribute :banner,                            squash: "Images", type: Array
-  attribute :consoleart,                        squash: "Images", type: Array
-  attribute :controllerart,                     squash: "Images", type: Array
+  attribute :fanart,         aliases: "Images", squash: "fanart",        type: Array
+  attribute :boxart,         aliases: "Images", squash: "boxart",        type: Array
+  attribute :banner,         aliases: "Images", squash: "banner",        type: Array
+  attribute :consoleart,     aliases: "Images", squash: "consoleart",    type: Array
+  attribute :controllerart,  aliases: "Images", squash: "controllerart", type: Array
 
   def games
     data = connection.get_platform_games(identity)["Game"]

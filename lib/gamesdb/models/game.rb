@@ -13,10 +13,10 @@ class Gamesdb::Client::Game < Cistern::Model
   attribute :publisher,    aliases: "Publisher"
   attribute :developer,    aliases: "Developer"
   attribute :rating,       aliases: "Rating"
-  attribute :fanart,                               squash: "Images",  type: Array
-  attribute :boxart,                               squash: "Images",  type: Array
-  attribute :banner,                               squash: "Images",  type: Array
-  attribute :screenshot,                           squash: "Images",  type: Array
-  attribute :thumb,                                squash: "Images",  type: Array
-  attribute :clearlogo,                            squash: "Images",  type: Array
+  attribute :fanart,       aliases: "Images",      squash: "fanart",     type: Array
+  attribute :boxart,       aliases: "Images",      squash: "boxart",     type: Array
+  attribute :banner,       aliases: "Images",      squash: "banner",     type: Array
+  attribute :screenshot,   aliases: "Images",      squash: "screenshot", type: Array
+  attribute :thumb,        aliases: "Images",      squash: "thumb",      type: Array
+  attribute :clearlogo,    aliases: "Images",      squash: "clearlogo",  type: Array
 end

@@ -13,10 +13,41 @@ class Gamesdb::Client::Game < Cistern::Model
   attribute :publisher,    aliases: "Publisher"
   attribute :developer,    aliases: "Developer"
   attribute :rating,       aliases: "Rating"
-  attribute :fanart,       aliases: "Images",      squash: "fanart",     type: Array
-  attribute :boxart,       aliases: "Images",      squash: "boxart",     type: Array
-  attribute :banner,       aliases: "Images",      squash: "banner",     type: Array
-  attribute :screenshot,   aliases: "Images",      squash: "screenshot", type: Array
-  attribute :thumb,        aliases: "Images",      squash: "thumb",      type: Array
-  attribute :clearlogo,    aliases: "Images",      squash: "clearlogo",  type: Array
+  attribute :images,       aliases: "Images"
+  #attribute :fanart,       aliases: "Images",      squash: "fanart"
+  #attribute :boxart,       aliases: "Images",      squash: "boxart"
+  #attribute :banner,       aliases: "Images",      squash: "banner"
+  #attribute :screenshot,   aliases: "Images",      squash: "screenshot"
+  #attribute :thumb,        aliases: "Images",      squash: "thumb"
+  #attribute :clearlogo,    aliases: "Images",      squash: "clearlogo"
+
+  def fanart
+    requires :images
+    images["fanart"]
+  end
+
+  def boxart
+    requires :images
+    images["boxart"]
+  end
+
+  def banner
+    requires :images
+    images["banner"]
+  end
+
+  def screenshot
+    requires :images
+    images["screenshot"]
+  end
+
+  def thumb
+    requires :images
+    images["thumb"]
+  end
+
+  def clearlogo
+    requires :images
+    images["clearlogo"]
+  end
 end

@@ -44,26 +44,26 @@ class Gamesdb::Client::Platform < Cistern::Model
 
   def fanart
     requires :images
-    append_urls images["fanart"]
+    images["fanart"].nil? ? [] : append_urls(images["fanart"])
   end
 
   def boxart
     requires :images
-    append_urls images["boxart"]
+    images["boxart"].nil? ? [] : append_urls(images["boxart"])
   end
 
   def banner
     requires :images
-    append_urls images["banner"]
+    images["banner"].nil? ? [] : append_urls(images["banner"])
   end
 
   def consoleart
     requires :images
-    append_urls images["consoleart"]
+    images["consoleart"].nil? ? [] : append_urls(images["consoleart"])
   end
 
   def controllerart
     requires :images
-    append_urls images["controllerart"]
+    images["controllerart"].nil? ? [] : append_urls(images["controllerart"])
   end
 end

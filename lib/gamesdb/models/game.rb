@@ -2,7 +2,7 @@ class Gamesdb::Client::Game < Cistern::Model
   identity :id
 
   attribute :game_title,   aliases: "GameTitle"
-  attribute :release_date, aliases: "ReleaseDate"
+  attribute :release_date, aliases: "ReleaseDate",                 type: :date
   attribute :platform,     aliases: "Platform"
   attribute :overview,     aliases: "Overview"
   attribute :esrb,         aliases: "ESRB"
@@ -37,26 +37,26 @@ class Gamesdb::Client::Game < Cistern::Model
 
   def fanart
     requires :images
-    append_urls images["fanart"]
+    images["fanart"].nil? ? [] : append_urls(images["fanart"])
   end
 
   def boxart
     requires :images
-    append_urls images["boxart"]
+    images["boxart"].nil? ? [] : append_urls(images["boxart"])
   end
 
   def banner
     requires :images
-    append_urls images["banner"]
+    images["banner"].nil? ? [] : append_urls(images["banner"])
   end
 
   def screenshot
     requires :images
-    append_urls images["screenshot"]
+    images["screenshot"].nil? ? [] : append_urls(images["screenshot"])
   end
 
   def clearlogo
     requires :images
-    append_urls images["clearlogo"]
+    images["clearlogo"].nil? ? [] : append_urls(images["clearlogo"])
   end
 end
